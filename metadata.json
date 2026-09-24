@@ -1,0 +1,8 @@
+{
+  "name": "ApexCreator Studio | Digital Growth, Branding & Creator Services",
+  "description": "Professional YouTube, Twitch, social media, branding, design, optimization, and digital growth services for creators and businesses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

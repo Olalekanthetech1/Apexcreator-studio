@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "chat": {
+      "enabled": true,
+      "businessHours": {
+        "enabled": true,
+        "timezone": "UTC",
+        "schedule": [
+          {
+            "day": "Monday",
+            "start": "08:00",
+            "end": "18:00",
+            "closed": false
+          },
+          {
+            "day": "Tuesday",
+            "start": "08:00",
+            "end": "18:00",
+            "closed": false
+          },
+          {
+            "day": "Wednesday",
+            "start": "08:00",
+            "end": "18:00",
+            "closed": false
+          },
+          {
+            "day": "Thursday",
+            "start": "08:00",
+            "end": "18:00",
+            "closed": false
+          },
+          {
+            "day": "Friday",
+            "start": "08:00",
+            "end": "18:00",
+            "closed": false
+          },
+          {
+            "day": "Saturday",
+            "start": "09:00",
+            "end": "14:00",
+            "closed": false
+          },
+          {
+            "day": "Sunday",
+            "start": "00:00",
+            "end": "00:00",
+            "closed": false
+          }
+        ]
+      },
+      "offlineMessage": "We're currently offline. Please leave your message and email, and we'll get back to you as soon as we're back!",
+      "welcomeMessage": "👋 Welcome to Denny CEO Agency! I am your live growth assistant. How can we help scale your channel today?"
+    }
+  },
+  "orders": [],
+  "chatSessions": [
+    {
+      "id": "test-session-123",
+      "customer_name": "Guest User",
+      "email": "",
+      "created_at": "2026-09-24T11:51:10.941Z",
+      "last_message_at": "2026-09-24T11:51:10.941Z"
+    },
+    {
+      "id": "live-test-user-01",
+      "customer_name": "Guest User",
+      "email": "",
+      "created_at": "2026-09-24T11:52:47.560Z",
+      "last_message_at": "2026-09-24T11:52:54.798Z"
+    },
+    {
+      "id": "prod-test-1790250837369",
+      "customer_name": "Guest User",
+      "email": "",
+      "created_at": "2026-09-24T11:53:57.438Z",
+      "last_message_at": "2026-09-24T11:54:22.180Z"
+    },
+    {
+      "id": "curl-test",
+      "customer_name": "Guest User",
+      "email": "",
+      "created_at": "2026-09-24T11:54:18.567Z",
+      "last_message_at": "2026-09-24T11:54:20.717Z"
+    }
+  ],
+  "chatMessages": [
+    {
+      "id": "msg-user-1790250670941",
+      "session_id": "test-session-123",
+      "sender": "user",
+      "text": "What is the price for YouTube Thumbnails and can I pay with USDT or negotiate a discount?",
+      "created_at": "2026-09-24T11:51:10.941Z"
+    },
+    {
+      "id": "msg-user-1790250767561",
+      "session_id": "live-test-user-01",
+      "sender": "user",
+      "text": "Can I pay for a YouTube Thumbnail with Crypto and negotiate a bulk discount for 5 videos?",
+      "created_at": "2026-09-24T11:52:47.561Z"
+    },
+    {
+      "id": "msg-ai-1790250774797",
+      "session_id": "live-test-user-01",
+      "sender": "admin",
+      "text": "**Yes, absolutely!** At **ApexCreator Studio**, we make it seamless to pay with crypto and tailor custom packages for creators scaling their output.\n\nHere is how we can handle your order for 5 custom YouTube Thumbnails:\n\n### 1. Crypto Payment Options\nWe accept secure on-chain crypto transactions with instant auto-verification, including:\n* **USDT** (on TRC20, BEP20, ERC20, or Solana)\n* **Bitcoin (BTC)**\n* **Ethereum (ETH)**\n* **Solana (SOL)**\n* **BNB & Litecoin (LTC)**\n\n### 2. Bulk Pricing & Custom Negotiation\nFor a batch of 5 high-CTR thumbnails, you have a couple of great paths depending on how deep you want to go:\n\n* **The Standard Route:** You can grab our **Standard Thumbnail Package ($230)**, which includes 6 high-CTR thumbnails, source PSD files, and 2 revisions with a 2-day turnaround. \n* **The Bulk / Custom Offer Route:** If you want a tailored bundle or want to negotiate a custom rate for your 5-video batch, you can use our **\"Make an Offer / Negotiate Price\"** feature directly in the order checkout form. Simply enter your desired price proposal, select your crypto asset of choice at checkout, and our production desk will review and lock it in!\n\n### What You Get with Our Thumbnails:\n* Engineered for maximum **CTR (Click-Through Rate)** and mobile/desktop feed visibility.\n* High-resolution **1920x1080 PNG/JPG** exports.\n* Fast **24 to 48-hour** turnaround times to match your upload schedule.\n\nReady to get started? Head over to our **YouTube Thumbnail Design** service in the catalog, select your preferred tier or click **\"Make an Offer\"** to drop in your bulk price, and check out with crypto! Let me know if you need any hook or concept ideas for those 5 videos while we get your order queued up! 🚀",
+      "created_at": "2026-09-24T11:52:54.798Z"
+    },
+    {
+      "id": "msg-user-1790250837439",
+      "session_id": "prod-test-1790250837369",
+      "sender": "user",
+      "text": "Hi! What video editing packages do you offer?",
+      "created_at": "2026-09-24T11:53:57.439Z"
+    },
+    {
+      "id": "msg-ai-1790250858181",
+      "session_id": "prod-test-1790250837369",
+      "sender": "admin",
+      "text": "Hey Creator! Welcome to **ApexCreator Studio**! \n\nWhile our live interactive catalog focuses heavily on high-impact visual branding, professional channel setups, custom graphics, and audience growth strategy across YouTube, Twitch, and Social Media (ranging from our **Basic $70** essentials to our comprehensive **Standard $230** and **Premium $460** master suites), we also handle specialized post-production workflows.\n\nTo get your content looking like top-tier creators, we specialize in optimizing the pieces that drive your views *before* the click, such as:\n* **YouTube Thumbnail Design** (High-CTR graphics engineered for maximum click-through rates - Basic: $70 | Standard: $230 | Premium: $460)\n* **Stream Packages & Twitch Overlays** (Complete motion and static HUD suites - Basic: $70 | Standard: $230 | Premium: $460)\n* **Channel Branding & Social Media Kits** (Unified visual identities - Basic: $70 | Standard: $230 | Premium: $460)\n\nIf you're looking for custom video editing or full-service post-production for your long-form videos or shorts, you can easily use our **Custom Price / Make an Offer** feature during checkout to submit your exact video scope and budget to our production team!\n\nWhat platform are you currently building your audience on? Let me know your niche or goals, and I'll hook you up with the exact growth roadmap or asset package you need!",
+      "created_at": "2026-09-24T11:54:18.181Z"
+    },
+    {
+      "id": "msg-user-1790250858194",
+      "session_id": "prod-test-1790250837369",
+      "sender": "user",
+      "text": "Can I pay for the standard package with USDT on TRC20?",
+      "created_at": "2026-09-24T11:54:18.194Z"
+    },
+    {
+      "id": "msg-user-1790250858567",
+      "session_id": "curl-test",
+      "sender": "user",
+      "text": "Hello ApexCreator Studio",
+      "created_at": "2026-09-24T11:54:18.567Z"
+    },
+    {
+      "id": "msg-ai-1790250860716",
+      "session_id": "curl-test",
+      "sender": "admin",
+      "text": "Welcome to ApexCreator Studio, Creator! 🚀 \n\nI'm your official AI Growth & Strategy Assistant. Whether you're looking to skyrocket your YouTube CTR, upgrade your Twitch broadcast visuals, or overhaul your multi-platform social media funnel, I'm here to help you scale.\n\nWhat are we working on today? Feel free to ask about any of our services, request a free channel/CTR audit, or explore our **Basic ($70)**, **Standard ($230)**, and **Premium ($460)** production packages!",
+      "created_at": "2026-09-24T11:54:20.717Z"
+    },
+    {
+      "id": "msg-ai-1790250862180",
+      "session_id": "prod-test-1790250837369",
+      "sender": "admin",
+      "text": "**Yes, absolutely!** \n\nAt **ApexCreator Studio**, we fully support crypto payments, including **USDT on TRC20**, along with BEP20, ERC20, and Solana, as well as Bitcoin, Ethereum, BNB, and Litecoin (auto-verified via Bybit on-chaining). We also accept traditional credit/debit cards via Stripe if you prefer.\n\nIf you are grabbing our **Standard package ($230)** for any of our services (like our popular YouTube Thumbnails, Twitch Overlays, Channel Setup, or Social Media Branding), you can simply select your service, choose the Standard tier, and select USDT (TRC20) at checkout. \n\nAre you ready to lock in your Standard package for your channel, or would you like me to pull up the exact deliverables included in a specific service for you?",
+      "created_at": "2026-09-24T11:54:22.180Z"
+    }
+  ]
+}

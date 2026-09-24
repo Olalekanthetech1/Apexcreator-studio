@@ -1,0 +1,210 @@
+{
+  "entities": {
+    "Order": {
+      "title": "Order",
+      "description": "Client service orders, milestones, deliverables, and payment receipts",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "serviceId": { "type": "string" },
+        "serviceName": { "type": "string" },
+        "amount": { "type": "number" },
+        "currency": { "type": "string" },
+        "status": { "type": "string" },
+        "clientName": { "type": "string" },
+        "clientEmail": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id", "serviceId", "serviceName", "amount", "currency", "status"]
+    },
+    "Service": {
+      "title": "Service",
+      "description": "Digital growth, branding, and optimization service catalog items",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "category": { "type": "string" },
+        "title": { "type": "string" },
+        "shortDesc": { "type": "string" },
+        "fullDesc": { "type": "string" },
+        "iconName": { "type": "string" },
+        "deliveryInfo": { "type": "string" },
+        "popular": { "type": "boolean" },
+        "packages": { "type": "object" }
+      },
+      "required": ["id", "category", "title", "shortDesc", "packages"]
+    },
+    "ChatSession": {
+      "title": "ChatSession",
+      "description": "Real-time support and inquiry conversations between clients and ApexCreator staff",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "lastMessage": { "type": "string" },
+        "lastSender": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["id"]
+    },
+    "ChatMessage": {
+      "title": "ChatMessage",
+      "description": "Individual message inside a chat session",
+      "type": "object",
+      "properties": {
+        "sessionId": { "type": "string" },
+        "sender": { "type": "string" },
+        "text": { "type": "string" },
+        "senderName": { "type": "string" },
+        "timestamp": { "type": "string" }
+      },
+      "required": ["sessionId", "sender", "text"]
+    },
+    "Lead": {
+      "title": "Lead",
+      "description": "VIP Growth Playbook downloads and lead consultation inquiries",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string" },
+        "name": { "type": "string" },
+        "phone": { "type": "string" },
+        "serviceInterest": { "type": "string" },
+        "source": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["email"]
+    },
+    "CaseStudy": {
+      "title": "CaseStudy",
+      "description": "Creator transformation metrics and case study showcases",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "clientName": { "type": "string" },
+        "clientHandle": { "type": "string" },
+        "serviceCategory": { "type": "string" },
+        "testimonialQuote": { "type": "string" }
+      },
+      "required": ["id", "clientName", "serviceCategory"]
+    },
+    "TeamMember": {
+      "title": "TeamMember",
+      "description": "Studio strategists, designers, and specialists",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "bio": { "type": "string" }
+      },
+      "required": ["id", "name", "role"]
+    },
+    "InsightArticle": {
+      "title": "InsightArticle",
+      "description": "Creator economy analysis, algorithmic trends, and guides",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "readTime": { "type": "string" }
+      },
+      "required": ["id", "title", "category"]
+    },
+    "ProofItem": {
+      "title": "ProofItem",
+      "description": "Verified client growth metrics and results",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "channelName": { "type": "string" }
+      },
+      "required": ["id", "title"]
+    },
+    "Testimonial": {
+      "title": "Testimonial",
+      "description": "Client reviews and ratings",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "comment": { "type": "string" }
+      },
+      "required": ["id", "name", "comment"]
+    },
+    "FAQItem": {
+      "title": "FAQItem",
+      "description": "Frequently asked questions",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "question": { "type": "string" },
+        "answer": { "type": "string" },
+        "category": { "type": "string" }
+      },
+      "required": ["id", "question", "answer"]
+    },
+    "SystemProbe": {
+      "title": "SystemProbe",
+      "description": "Healthcheck probe used by Admin connection testing",
+      "type": "object",
+      "properties": {
+        "timestamp": { "type": "string" },
+        "testedBy": { "type": "string" },
+        "projectId": { "type": "string" }
+      },
+      "required": ["timestamp"]
+    }
+  },
+  "firestore": {
+    "/orders/{orderId}": {
+      "schema": { "$ref": "#/entities/Order" },
+      "description": "Client orders and project deliverables"
+    },
+    "/services/{serviceId}": {
+      "schema": { "$ref": "#/entities/Service" },
+      "description": "Digital service catalog offerings and packages"
+    },
+    "/case_studies/{caseStudyId}": {
+      "schema": { "$ref": "#/entities/CaseStudy" },
+      "description": "Client growth transformations and case studies"
+    },
+    "/team/{memberId}": {
+      "schema": { "$ref": "#/entities/TeamMember" },
+      "description": "Studio team members and strategists"
+    },
+    "/insights/{insightId}": {
+      "schema": { "$ref": "#/entities/InsightArticle" },
+      "description": "Creator guides and insights"
+    },
+    "/proofs/{proofId}": {
+      "schema": { "$ref": "#/entities/ProofItem" },
+      "description": "Proof of client results and growth"
+    },
+    "/testimonials/{testimonialId}": {
+      "schema": { "$ref": "#/entities/Testimonial" },
+      "description": "Client ratings and testimonials"
+    },
+    "/faqs/{faqId}": {
+      "schema": { "$ref": "#/entities/FAQItem" },
+      "description": "Frequently asked questions"
+    },
+    "/chat_sessions/{sessionId}": {
+      "schema": { "$ref": "#/entities/ChatSession" },
+      "description": "Chat session threads"
+    },
+    "/chat_sessions/{sessionId}/messages/{messageId}": {
+      "schema": { "$ref": "#/entities/ChatMessage" },
+      "description": "Chat messages in a session"
+    },
+    "/leads/{leadId}": {
+      "schema": { "$ref": "#/entities/Lead" },
+      "description": "Captured leads and growth guide requests"
+    },
+    "/system_probes/{probeId}": {
+      "schema": { "$ref": "#/entities/SystemProbe" },
+      "description": "Admin connection health-check probes"
+    }
+  }
+}

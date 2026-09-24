@@ -1,0 +1,63 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Global Test Probes (Admin Connection Healthcheck)
+    match /system_probes/{probeId} {
+      allow read, write: if true;
+    }
+
+    // Orders Collection
+    match /orders/{orderId} {
+      allow read, create, update: if true;
+    }
+
+    // Live Chat Sessions & Subcollections
+    match /chat_sessions/{sessionId} {
+      allow read, write: if true;
+
+      match /messages/{messageId} {
+        allow read, write: if true;
+      }
+    }
+
+    // Leads & VIP Growth Playbook Downloads
+    match /leads/{leadId} {
+      allow create, read, update, delete: if true;
+    }
+
+    // Catalog Content & Collections
+    match /services/{serviceId} {
+      allow read, write: if true;
+    }
+
+    match /case_studies/{caseStudyId} {
+      allow read, write: if true;
+    }
+
+    match /team/{memberId} {
+      allow read, write: if true;
+    }
+
+    match /insights/{insightId} {
+      allow read, write: if true;
+    }
+
+    match /proofs/{proofId} {
+      allow read, write: if true;
+    }
+
+    match /testimonials/{testimonialId} {
+      allow read, write: if true;
+    }
+
+    match /faqs/{faqId} {
+      allow read, write: if true;
+    }
+
+    match /settings/{settingId} {
+      allow read, write: if true;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4338ca" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#7e22ce" />
+    </linearGradient>
+    <linearGradient id="goldGrad512" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#facc15" />
+      <stop offset="100%" stop-color="#eab308" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad512)" />
+  <!-- Apex Peak & Crown -->
+  <path d="M256 96L324 204L416 172L372 352H140L96 172L188 204L256 96Z" fill="url(#goldGrad512)" />
+  <circle cx="256" cy="392" r="16" fill="#ffffff" />
+  <circle cx="188" cy="392" r="11" fill="#ffffff" opacity="0.8" />
+  <circle cx="324" cy="392" r="11" fill="#ffffff" opacity="0.8" />
+</svg>
